@@ -13,7 +13,7 @@ This repository contains scripts and documentation related to various tasks. Bel
 
 
 - **[Reroll](reroll.md)**
-  - Description: When managing a Tanzu Kubernetes Grid (TKG) cluster integrated with Avi Networks' ADC, you might need to rebuild nodes, be it control planes or worker nodes, from scratch. Leveraging the Cluster API's clusterctl, you can initiate this by using the commands clusterctl alpha rollout restart kubeadmcontrolplane/<control-plane-name> for the control plane and clusterctl alpha rollout restart machinedeployment/<machine-deployment-name> for worker nodes. After executing, it's vital to verify the successful rebuild of nodes and ensure they adopt the updated configurations, especially if changes involve Avi ADC or the removal of components like AKO.
+  - Description: How to rebuild a TKG-m / TKG-s cluster so each node is remimaged and pics up new configs from managment cluster.
 
   
 - **[TCP SSL](tcpssl.md)**
