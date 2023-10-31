@@ -13,7 +13,7 @@ This repository contains scripts and documentation related to various tasks. Bel
 
 
 - **[Reroll](reroll.md)**
-  - Description: How to rebuild a TKG-m / TKG-s cluster so each node is remimaged and pics up new configs from managment cluster.
+  - Description: To rebuild a TKG-managed (TKG-m) or TKG-standalone (TKG-s) cluster and ensure each node is re-imaged and collects new configurations from the management cluster, utilize the Cluster API's clusterctl tool. Initiate the process with clusterctl alpha rollout restart kubeadmcontrolplane/<control-plane-name> for the control plane and clusterctl alpha rollout restart machinedeployment/<machine-deployment-name> for worker nodes. After executing, the nodes will be rebuilt, pulling the latest configurations from the management cluster.
 
   
 - **[TCP SSL](tcpssl.md)**
