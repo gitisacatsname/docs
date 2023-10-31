@@ -113,6 +113,3 @@ After deploying the above resources, you can verify that the load balancer is wo
    ```
 
 2. Access the webserver using the external IP. Ensure you can access it over HTTPS since we enabled SSL.
-
----
-ckorte@vmware.com

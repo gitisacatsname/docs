@@ -261,6 +261,3 @@ AVI_LABELS: |
 ```
 
 If you create a cluster with this yaml it will include the default ako (not the helm one)
-
----
-ckorte@vmware.com
