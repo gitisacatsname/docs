@@ -17,7 +17,7 @@ This repository contains scripts and documentation related to various tasks. Bel
 
   
 - **[TCP SSL](tcpssl.md)**
-  - Description: Configuration and setup guide for TCP SSL.
+  - Description: This guide will walk you through the process of setting up a load balancer with SSL and TCP support using the L4Rule in AKO.
 
 
 ## Scripts
