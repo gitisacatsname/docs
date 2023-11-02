@@ -141,3 +141,15 @@ spec:
   egressIP: 192.168.40.10  # This should be an available IP you wish to use for egress SNAT
   externalIPPool: my-external-ip-pool  # The name of your ExternalIPPool resource
 ```
+
+```bash
+[root@CentOS7TestVM ~]# k get nodes
+NAME                                  STATUS   ROLES           AGE   VERSION
+consti1-control-plane-gr5q9           Ready    control-plane   3d    v1.26.5+vmware.2
+consti1-md-0-55b97fbb4dxp6xdd-wcj4k   Ready    <none>          3d    v1.26.5+vmware.2
+```
+
+
+```bash
+kubectl label nodes consti1-md-0-55b97fbb4dxp6xdd-wcj4k network-role=egress-gateway
+```
