@@ -4,6 +4,9 @@ This repository contains scripts and documentation related to various tasks. Bel
 
 ## Documentation
 
+- **[Antrea Fixed Ingress](antreafixedingress.md)**
+  - The documentation outlines how to configure fixed IP ingress using Antrea on Kubernetes. It details how to set up a Kubernetes service of type LoadBalancer with an external IP address that remains static (fixed) for consistent ingress traffic routing.
+
 - **[Fixed Ingress](fixedingress.md)**
   - This manual provides a step-by-step guide on how to enable SSL with TCP on Avi using Kubernetes configurations.
 
@@ -13,7 +16,7 @@ This repository contains scripts and documentation related to various tasks. Bel
 
 
 - **[Reroll](reroll.md)**
-  - To rebuild a TKG-MultiCloud (TKG-m) or TKG-Service (TKG-s) cluster and ensure each node is re-imaged and collects new configurations from the management cluster, utilize the Cluster API's clusterctl tool. Initiate the process with clusterctl alpha rollout restart ```bash kubeadmcontrolplane/<control-plane-name> ``` for the control plane and ```bash clusterctl alpha rollout restart machinedeployment/<machine-deployment-name> ``` for worker nodes. After executing, the nodes will be rebuilt, pulling the latest configurations from the management cluster.
+  - To rebuild a TKG-MultiCloud (TKG-m) or TKG-Service (TKG-s) cluster and ensure each node is re-imaged and collects new configurations from the management cluster, utilize the Cluster API's clusterctl tool. Initiate the process with `clusterctl alpha rollout restart kubeadmcontrolplane/<control-plane-name>` for the control plane and `clusterctl alpha rollout restart machinedeployment/<machine-deployment-name>` for worker nodes. After executing, the nodes will be rebuilt, pulling the latest configurations from the management cluster.
 
   
 - **[TCP SSL](tcpssl.md)**
