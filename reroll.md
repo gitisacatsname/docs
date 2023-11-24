@@ -71,3 +71,6 @@ kubectl get vspheremachines.infrastructure.cluster.x-k8s.io  -A
 ```
 
 This manual provides the basic commands to manage and troubleshoot your Cluster API resources. Ensure you have the necessary permissions to perform these operations in your cluster.
+
+
+kubectl delete secret <workload cluster name>-load-balancer-and-ingress-service -n <workload cluster name space>
